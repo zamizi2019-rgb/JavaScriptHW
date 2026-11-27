@@ -1,1 +1,22 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Книжная полка</title>
+        <style>:root{font-family:system-ui,sans-serif;color:#17210e;background:#f3f7e9}*{box-sizing:border-box}body{margin:0;padding:24px}h1{font-size:28px;line-height:1.15;margin:10px 0}p{line-height:1.5}a{color:#4f7a00}.eyebrow{font:700 11px monospace;letter-spacing:2px;color:#698146}.ready{background:#c5f82a;display:inline-block;padding:8px 12px;border-radius:12px}.hero-card,.training-card{padding:16px;background:#fff;border:1px solid #d4dfbf;border-radius:16px}.hero-card h3{font-size:20px;margin:0 0 8px}.hero-card p{margin:0;color:#5b6c48}.training-card{border-style:dashed;color:#879477}.team{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0}.count{font:700 13px monospace;color:#71824e}.legend{font-size:12px;color:#7e8a6c}button{border:0;padding:10px 16px;border-radius:10px;background:#c5f82a;font-weight:700}@media(max-height:460px){body{padding:14px}h1{font-size:23px;margin:8px 0}p{margin:8px 0;line-height:1.35}.team{gap:8px;margin:12px 0}.hero-card,.training-card{padding:11px;border-radius:12px}.hero-card h3{font-size:18px;margin-bottom:4px}.hero-card p{font-size:14px}.ready{padding:6px 9px}}
 
+        </style>
+        <script src="guild.js" defer></script>
+    </head>
+    <body>
+        <p class="eyebrow">HOMEWORK / 06</p>
+        <h1 id="library-title">Наша полка</h1>
+        <p id="library-description">Здесь появятся книги.</p>
+        <a id="library-link" href="#">Ссылка</a>
+        <section class="team" id="books">
+            <article class="training-card" id="book-placeholder">Макет книги</article>
+        </section>
+        <p class="count">Книг: <span id="book-count">0</span></p>
+    </body>
+</html>
