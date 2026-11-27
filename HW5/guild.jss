@@ -26,25 +26,19 @@ libraryTitle.classList.add('ready');
 function renderBooks(list) {
     const library = document.getElementById('books');
     const counter = document.getElementById('book-count');
-
     library.innerHTML = '';
 
     list.forEach(function(book) {
         const card = document.createElement('article');
         const bookName = document.createElement('h3');
         const bookAuthor = document.createElement('p');
-
         card.className = 'hero-card';
-
         bookName.textContent = book.title;
         bookAuthor.textContent = book.author;
-
         card.appendChild(bookName);
         card.appendChild(bookAuthor);
-
         library.appendChild(card);
     });
-
     counter.textContent = list.length;
 }
 renderBooks(books);
